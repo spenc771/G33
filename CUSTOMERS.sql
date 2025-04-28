@@ -9,5 +9,5 @@ CREATE TABLE customers (
   state VARCHAR(50),
   zip_code VARCHAR(10),
   cpayment_ID INT UNIQUE,
-  FOREIGN KEY (cpayment_ID) REFERENCES Payments(payment_ID)
+  FOREIGN KEY (cpayment_ID) REFERENCES payments(payment_ID)
 );
