@@ -7,5 +7,7 @@ CREATE TABLE customers (
   street VARCHAR(100),
   city VARCHAR(50),
   state VARCHAR(50),
-  zip_code VARCHAR(10)
+  zip_code VARCHAR(10),
+  cpayment_ID INT UNIQUE,
+  FOREIGN KEY (cpayment_ID) REFERENCES Payments(payment_ID)
 );
